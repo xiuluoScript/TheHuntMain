@@ -62,7 +62,19 @@ local games = {
     [12434172731] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDeadly"},
     [10704789056] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDriveWorld"},
     [15101393044] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Dress%20To%20Impress"},
-
+    [8554378337] = {"https://raw.githubusercontent.com/ToraScript/Script/main/WeaponFighting"},
+    [4490140733] = {"https://gist.githubusercontent.com/SpencerDevv/33683ac31b7e2621b90b9a3b39a3155c/raw/9d4fd60202457cacb17871e5d18b3654bdd344e6/betaV8"},
+    [14897405913] = {"https://raw.githubusercontent.com/ToraScript/Script/main/Lumberjack"},
+    [5991163185] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTSpray"},
+    [2534724415] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTERLC"},
+    [4282985734] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCombat"},
+    [9865958871] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTPaintball"},
+    [9224601490] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTFruitBattle"},
+    [2768379856] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNT3008"},
+    [11329389795] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Astro%20Renaissance"},
+    [14518422161] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTGunfight"},
+    [2414851778] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDungeon"},
+    [6938803436] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDimensions"},
 }
 
 local urls = games[game.PlaceId]
@@ -131,3 +143,16 @@ end
 --致命的决定 [狩猎 🔥 ]
 --HUNT 🔎 驱动世界 🏎️ 漂移和赛车
 --穿着给人印象
+--法宝模拟器
+--👨‍🍳✨ 我的餐厅
+--伐木工模拟器
+--Spray Paint! (喷漆艺术家)
+--Emergency Response: Liberty County
+--战斗勇士 [狩猎 + 1.16M 免费 UGC]
+--BIG Paintball 2!
+--[2X + 爱] 水果战场
+--3008 [2.73]
+--星际文艺复兴
+--Gunfight Arena | HUNT
+--地下城任务!
+--[ 🎮 狩猎]动漫维度模拟器
