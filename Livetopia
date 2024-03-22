@@ -1,0 +1,6 @@
+        local args = {
+    [1] = "Easter2024_Egg",
+    [2] = "Equip"
+}
+
+game:GetService("ReplicatedStorage").Remotes.EquipToolRF:InvokeServer(unpack(args))
