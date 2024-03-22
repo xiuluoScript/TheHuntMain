@@ -1,0 +1,133 @@
+    if not game:IsLoaded() then
+    repeat
+        task.wait()
+    until game:IsLoaded()
+end
+local games = {
+    [4924922222] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTBrookhaven"},
+    [14943334555] = {"https://raw.githubusercontent.com/ToraScript/Script/main/BikeofHell"},
+    [3457390032] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Club-Roblox%20TheHunt"},
+    [15479016377] = {"https://raw.githubusercontent.com/ToraScript/Script/main/Snowboard"},
+    [189707] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTNDS"},
+    [14184086618] = {"https://raw.githubusercontent.com/ToraScript/Script/main/ObbyBike"},
+    [6205205961] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTRunningHead"},
+    [1554960397] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCarDealership"},
+    [9049840490] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Sonic%20Speed%20Simulator"},
+    [6243699076] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTTheMimic"},
+    [8712817601] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/in%20BARRY'S%20PRISON%20RUN%20OBBY"},
+    [286090429] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTArsenal"},
+    [3101667897] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Legends%20Of%20Speed"},
+    [6447798030] = {"https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"},
+    [14448662003] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCarry"},
+    [815405518] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/The%20Floor%20Is%20LAVA"},
+    [3956818381] = {"https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"},
+    [7993293100] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Tsunami%20Game"},
+    [6766156863] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTStrongman"},
+    [13827198708] = {"https://raw.githubusercontent.com/ToraScript/Script/main/PullaSword"},
+    [12985361032] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTMetro"},
+    [4616652839] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTShindo"},
+    [4639625707] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTWar"},
+    [7180042682] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTMilitary"},
+    [10253248401] = {"https://raw.githubusercontent.com/ToraScript/Script/main/Elemental"},
+    [3475397644] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDragon"},
+    [13127800756] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTArm"},
+    [4623386862] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTPiggy"},
+    [11606818992] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTSTEEP"},
+    [5708035517] = {"https://raw.githubusercontent.com/ToraScript/Script/main/MegaHide"},
+    [6516141723] = {"https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"},
+    [15092647980] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTSmash"},
+    [10449761463] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTTSB"},
+    [16445368294] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/NEED%20MORE%20FRIENDS"},
+    [12355337193] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDuels"},
+    [14696958202] = {"https://raw.githubusercontent.com/ToraScript/Script/main/SpongeBob"},
+    [1345139196] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTTreasure"},
+    [8884433153] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCollect"},
+    [4580204640] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTKiller"},
+    [6737970321] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Livetopia"},
+    [8369888266] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTRedcliff"},
+    [891852901] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTGreenville"},
+    [11523257493] = {"https://raw.githubusercontent.com/ToraScript/Script/main/Swordburst"},
+    [3398014311] = {"https://raw.githubusercontent.com/iz037/Zeld-Hub/main/Script/Restaurant%20Tycoon%202.lua"},
+    [735030788] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTRoyale"},
+    [3351674303] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTEmpire"},
+    [6989310863] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTHorse"},
+    [2432005634] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTWolf"},
+    [3663340706] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCats"},
+    [8737602449] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTPLSDONATE"},
+    [5670292785] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTUndead"},
+    [13775256536] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTToiletTower"},
+    [7041939546] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTCatalog"},
+    [2727067538] = {"https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"},
+    [13864661000] = {"https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"},
+    [12434172731] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDeadly"},
+    [10704789056] = {"https://raw.githubusercontent.com/ToraScript/Script/main/HUNTDriveWorld"},
+    [15101393044] = {"https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/Dress%20To%20Impress"},
+
+}
+
+local urls = games[game.PlaceId]
+if urls then
+    for _, url in ipairs(urls) do
+        loadstring(game:HttpGet(url))()
+    end
+end
+
+--
+--支持的游戏为以下(名字是中文机翻)
+--布鲁克海文
+--地狱自行车 [HUNT 🔥 ]
+--Roblox 俱乐部!
+--[HUNT] Snowboard Obby ❄ World 5
+--自然灾害生存游戏
+--[HUNT] Obby,但你骑自行车
+--逃脱跑头
+--[THE HUNT!] Car Dealership Tycoon
+--[👊新金属]索尼克速度模拟器
+--[狩猎] 模仿者
+--巴里监狱运行OBBY! (狩猎活动!)
+--兵工厂
+--极速传奇 ⚡
+--动感星期五
+--携带一个朋友!（团队跑酷）
+--地板是 LAVA! 🔥
+--忍者传奇
+--超级大力士模拟器
+--拔剑
+--都市生活 🏙️ 城市角色扮演
+--神道生命[狩猎]
+--战争大亨
+--军事大亨
+--元素力量大亨
+--龙之冒险
+--手臂摔跤模拟器
+--小猪 [狩猎]
+--陡峭的台阶[ 🔥 狩猎 🔥 ]
+--[狩猎]超级捉迷藏
+--DOORS
+--粉碎项目
+--最强的战场
+--[狩猎] 🎂 需要更多朋友 
+--杀手与警长决斗
+--SpongeBob Simulator
+--寻宝模拟器
+--收集所有宠物
+--生存于杀手
+--Livetopia
+--红崖城
+--格林维尔
+--剑爆3
+--餐厅大亨2
+--Royale 🌈 高 [狩猎! 🥚 ]
+--驾驶帝国
+--野马群岛
+--狼与猎人
+--猫战士：终极版
+--请捐赠
+--[狩猎]不死防卫大亨
+--Toilet Tower Defense
+--目录头像创建者
+--世界//零
+--Break In 2 (Story)
+--致命的决定 [狩猎 🔥 ]
+--HUNT 🔎 驱动世界 🏎️ 漂移和赛车
+--穿着给人印象
