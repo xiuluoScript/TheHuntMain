@@ -1,5 +1,5 @@
 local userScripts = {
-    ["名字"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHunt",
+    ["名字"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
 }
 
 local player = game.Players.LocalPlayer
