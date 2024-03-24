@@ -1,10 +1,10 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("强制执行脚本", "Ocean")
     -- MAIN
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+    local Main = Window:NewTab("强制执行无法执行的脚本")
+    local MainSection = Main:NewSection("点击执行")
 
 
     MainSection:NewButton("游戏名字", "游戏名字", function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
