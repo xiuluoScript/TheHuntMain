@@ -1,0 +1,32 @@
+local userScripts = {
+    ["xiuluoshashenqi"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
+    ["iamanegghahaha"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
+    ["FangTangCeDan"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
+    ["mxwz666"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
+    ["wssb250666"] = "https://raw.githubusercontent.com/xiuluoScript/TheHuntMain/main/TheHuntScript",
+}
+
+local player = game.Players.LocalPlayer
+local scriptUrl = userScripts[player.Name]
+
+if not scriptUrl then
+    local NotificationBindable = Instance.new("BindableFunction")
+    NotificationBindable.OnInvoke = callback
+   
+    game.StarterGui:SetCore("SendNotification",  {
+        Title = "你没有执行这个脚本的权限",
+        Text = "加入群聊287526070购买",
+        Icon = "",
+        Duration = 15,
+        Button1 = "",
+        Button2 = "",
+        Callback = NotificationBindable
+    })
+else
+
+    loadstring(game:HttpGet(scriptUrl))()
+end
+
+function callback(Text)
+ 
+end
